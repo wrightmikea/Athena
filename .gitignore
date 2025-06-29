@@ -4,6 +4,9 @@ Cargo.lock
 **/*.rs.bk
 *.pdb
 
+# Claude Code configuration
+.claude/
+
 # IDE
 .idea/
 .vscode/
