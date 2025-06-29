@@ -1,0 +1,69 @@
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+*.log
+*.tmp
+.test_data/
+
+# Documentation
+docs/book/
+
+# Environment
+.env
+.env.local
+
+# Coverage
+*.profraw
+*.profdata
+coverage/
+
+# WASM
+pkg/
+wasm-pack.log
+
+# Python (for scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+
+# Node (for frontend tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+out/
+
+# Temporary files
+tmp/
+temp/
+*.temp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificates
+*.pem
+*.key
+*.crt

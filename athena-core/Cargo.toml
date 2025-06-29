@@ -1,0 +1,30 @@
+[package]
+name = "athena-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+# Workspace dependencies
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+prost.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+bytes.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+async-trait.workspace = true
+
+# Local dependencies
+once_cell = "1.19"
+parking_lot = "0.12"
+
+[dev-dependencies]
+proptest.workspace = true
+tokio = { workspace = true, features = ["test-util"] }
+
+[build-dependencies]
+tonic-build = "0.10"

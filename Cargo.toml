@@ -1,0 +1,74 @@
+[workspace]
+resolver = "2"
+members = [
+    "athena-core",
+    "athena-agent",
+    "athena-transport",
+    "athena-collector",
+    "athena-wasm",
+    "athena-capture",
+    "athena-processor",
+    "athena-store",
+    "athena-query",
+    "athena-mcp",
+    "athena-registry",
+    "athena-reload",
+    "athena-viz",
+    "athena-alert",
+    "athena-test",
+    "athena-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Michael A. Wright"]
+license = "Apache-2.0"
+repository = "https://github.com/wrightmikea/Athena"
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+prost = "0.12"
+tonic = "0.10"
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Logging and tracing
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# Networking
+tower = "0.4"
+hyper = "1.0"
+axum = "0.7"
+
+# Database
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "sqlite", "postgres"] }
+
+# Utils
+bytes = "1.5"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+futures = "0.3"
+async-trait = "0.1"
+
+# Testing
+proptest = "1.4"
+criterion = "0.5"
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[profile.dev]
+opt-level = 0
+
+[profile.bench]
+inherits = "release"
