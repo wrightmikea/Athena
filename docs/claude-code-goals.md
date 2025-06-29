@@ -1,6 +1,6 @@
-# Claude CLI + MCP + ATHENA Integration Goals
+# Claude Code + MCP + ATHENA Integration Goals
 
-This document outlines the strategic integration of Claude Code CLI, Model Context Protocol (MCP) server, and ATHENA for intelligent distributed application debugging and monitoring.
+This document outlines the strategic integration of Claude Code, Model Context Protocol (MCP) server, and ATHENA for intelligent distributed application debugging and monitoring.
 
 ## Vision Statement
 
@@ -11,7 +11,7 @@ Create an AI-powered distributed debugging ecosystem where Claude Code can intel
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Claude Code   │    │   MCP Server    │    │     ATHENA      │
-│      CLI        │◄──►│   (Phase 4)     │◄──►│   Monitoring    │
+│                 │◄──►│   (Phase 4)     │◄──►│   Monitoring    │
 ├─────────────────┤    ├─────────────────┤    ├─────────────────┤
 │ • Chat with AI  │    │ • Protocol Impl │    │ • Event Stream  │
 │ • Code Analysis │    │ • Tool Registry │    │ • Time Sync     │
