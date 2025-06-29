@@ -2,7 +2,6 @@
 
 use athena_core::prelude::*;
 use std::time::Duration;
-use tokio;
 
 #[tokio::main]
 async fn main() -> Result<()> {
