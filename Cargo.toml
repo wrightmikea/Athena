@@ -2,21 +2,22 @@
 resolver = "2"
 members = [
     "athena-core",
-    "athena-agent",
-    "athena-transport",
-    "athena-collector",
-    "athena-wasm",
-    "athena-capture",
-    "athena-processor",
-    "athena-store",
-    "athena-query",
-    "athena-mcp",
-    "athena-registry",
-    "athena-reload",
-    "athena-viz",
-    "athena-alert",
-    "athena-test",
-    "athena-cli",
+    # Other crates will be added as they are implemented
+    # "athena-agent",
+    # "athena-transport",
+    # "athena-collector",
+    # "athena-wasm",
+    # "athena-capture",
+    # "athena-processor",
+    # "athena-store",
+    # "athena-query",
+    # "athena-mcp",
+    # "athena-registry",
+    # "athena-reload",
+    # "athena-viz",
+    # "athena-alert",
+    # "athena-test",
+    # "athena-cli",
 ]
 
 [workspace.package]
